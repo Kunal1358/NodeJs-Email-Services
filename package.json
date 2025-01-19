@@ -1,0 +1,19 @@
+{
+  "name": "nodejs-email-services",
+  "version": "1.0.0",
+  "description": "This is a simple Node.js script that sends an email with embedded content and includes downloadable attachments using Nodemailer",
+  "main": "index.js",
+  "scripts": {
+    "local": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "nodemailer": "^6.9.16"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
