@@ -13,10 +13,10 @@ Before running the code, make sure you have the following:
 
 ### 1. Install Dependencies
 
-First, you need to install **Nodemailer**. In your project directory, run the following command to install the required dependencies:
+First, you need to install dependencies. In your project directory, run the following command to install the required dependencies:
 
 ```bash
-npm install nodemailer
+npm install
 ```
 
 ### 2. Run the `index.js` File
