@@ -4,10 +4,22 @@ const path = require('path')
 
 async function sendMail() {
     try {
+
+        /*
+        Port 465 is generally used for SSL, while Port 587 is used for TLS.
+        If you're using Port 465, you should set secure: true, which indicates SSL should be used.
+        If you're using Port 587, you should set secure: false and rely on STARTTLS (which is TLS).
+        */
+
+        /*
+        rejectUnauthorized: true (default): Verifies the server's SSL/TLS certificate to ensure the server is trustworthy.
+        rejectUnauthorized: false: Disables certificate verification (use with caution—only for testing or non-production environments).
+        */
+
         const transporter = nodeMailer.createTransport({
             host: process.env.NODE_MAILER_HOST,
             port: process.env.NODE_MAILER_PORT,
-            // secure: true, // use SSL
+            secure: process.env.NODE_MAILER_SECURE === 'true', // Convert to boolean
             auth: {
                 user: process.env.NODE_MAILER_FROM_EMAIL,
                 pass: process.env.NODE_MAILER_PASSWORD
