@@ -26,4 +26,4 @@ node index.js
 
 This will execute the `index.js` file, and if everything is configured correctly, an email will be sent with the specified content.
 
-## You can play with *configurations* depending on the use case.
+## You can experiment with *configurations* based on the specific use case. For more details, refer to the documentation of nodemon.
