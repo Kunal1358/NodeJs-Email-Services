@@ -37,7 +37,7 @@ async function sendMail() {
             html: `
             <body style="font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0;">
                 <div style="max-width: 600px; margin: 0 auto; padding: 20px;">
-                    <h1 style="color: #333; text-align: center;">Welcome to Our Service!</h1>
+                    <h1 style="color: #333; text-align: center;">Testing Nodemailer!</h1>
                     <p style="font-size: 16px; color: #555; margin: 15px 0; padding: 0 15px;">Here is an image embedded in the email:</p>
                     <img src="cid:unique@image.cid" alt="Embedded Image" style="max-width: 100%; height: auto;" />
                     <p style="font-size: 16px; color: #555; margin: 15px 0; padding: 0 15px;">You can download the PDF by clicking the link below:</p>
